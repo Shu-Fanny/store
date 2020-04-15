@@ -1,4 +1,4 @@
-# store
+# store http://47.101.135.232:8080/store_web/ 
 The school project
 顾客
 1、用户登陆、注册
