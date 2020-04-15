@@ -1,0 +1,73 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>修改头像</title>
+		<link rel="stylesheet" href="../css/changeHeadImg.css" />
+		<script type="text/javascript" src="../js/jquery-1.12.4.js" ></script>
+	</head>
+	<body>
+		<div class="box">
+			<div class="header">
+				<img src="../img/leftheader.png" class="left_header" />
+				<img src="../img/rightHeader.png" class="right_header"  />
+			</div>
+			<div class="middle">
+				<div class="left_box">
+					<div class="head_portrait">
+						<img src="../img/touxiang.jpg" />
+					</div>
+					<div class="menu">
+						<p style="color: #488f53;">ZZY</p>
+						<a href="homePage.html">我的课程</a>
+						<a href="basics.html">修改资料</a>
+						<a href="changePwd.html">密码管理</a>
+						<a href="changeHeadImg.html">修改头像</a>
+						<a href="register.html" id="exit">退出登录</a>
+					</div>
+				</div>
+				
+				<div class="right_box">
+			        <h2>修改头像</h2>
+					<hr color=#488f53 SIZE=2/>
+					<br /><br />
+					<form action="" method="get" enctype="multipart/form-data" action="http://192.168.0.2:8899/check_by_face_controller/teacher.do/addCourseToTeacher.do">
+						<div class="box_icon">
+							<div class="profile_photog_after">
+								<img class="profile_img" src="../img/touxiang.jpg" id="show" />
+							</div>
+							<div class="profile_photog_msg">
+								<input type="file" name="" id="file" value="" accept="image/*" onchange="changepic(this)" style="display: none;"/>
+								<img src="../img/saveIMG.png"/ style="width: 100px;" onclick="addScore()">
+								<li>支持JPG、JPGE、PNG格式</li>
+								<li>文件小于3MB</li>
+							</div>
+							<input type="submit" value="完成" style="" class="finish"/>
+		                </div>
+		          </form>
+				</div>
+			</div>
+			<div class="nav">
+				<p>@智能考勤系统</p>
+			</div>
+		</div>
+		<script>
+			function addScore(){
+				document.getElementById("file").click();
+			}
+			function changepic() {
+				 var reads= new FileReader();
+				 f=document.getElementById('file').files[0];
+				 reads.readAsDataURL(f);
+				 reads.onload=function (e) {
+				 	document.getElementById('show').src=this.result;
+			   }
+			}
+			$(function(){
+				$("#exit").click(function(){
+					alert("退出成功");
+				});
+			});
+		</script>
+	</body>
+</html>

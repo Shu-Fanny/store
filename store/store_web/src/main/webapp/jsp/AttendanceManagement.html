@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>考勤管理</title>
+        <script src="../js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap-table.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/tableExport.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap-table-zh-CN.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap-table.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>			
+	</head>
+	<body>
+		<div class="box">
+			<div class="header">
+				<img src="../img/leftHeader.png" class="left_header" />
+				<img src="../img/rightHeader.png" class="right_header"  />
+			</div>
+			<div class="middle">
+				<div class="right_box">
+					<p>
+						<span style="font-size:32px; color: #006600; ">数据结构</span>
+						<span style="color:#70B603;">考勤信息</span>
+						<span class="courseManageAndChange">
+							<!--<a id="creatClass_one" href="#">+新建班级</a>-->
+							<a href="ModifyAttendance.html" target="_blank">修改考勤设置</a>
+						</span>
+					</p>
+					<hr color=#488f53 SIZE=2 style="margin-top: 5px;"/>
+					
+					<!--<div class="addCourse" id="addCourse">
+						<div class="headline">
+							<h4>班级名称</h4>
+							<span class="close" id="close">
+								<img src="../img/close.png" />
+							</span>
+						</div>
+						<div class="matter">
+							<span>班级名称：<input type="text" /></span>
+							<button type="submit" class="btn1">完成</button>
+							<button type="button" class="btn2" id="btn2">取消</button>
+						</div>-->
+						
+					<!--</div>
+					<div class="className_box">
+						<ul id="lichange">
+							<!--<li id="bbb">17物联网</li>
+							<li>18物联网</li>
+						</ul>
+					</div>-->
+					<div class="classMsg_box">
+						<div class="classFunction_box">
+							<button id="" style="margin-left:100px; margin-top: 10px;">开始考勤</button>
+							<button id="btnExport" style="margin-left: 10px;">导出</button>
+						</div>
+						<div class="table_box">
+							<table id="table"></table>
+						</div>
+						<!--<a href="">发通知</a>-->
+						<!--<a href="">移除</a>-->
+					</div>
+					<div class="stuMsg" id="stuMsg">
+						<div class="headline">
+							<h4>个人考勤详情</h4>
+							<span class="close" id="close">
+								<img src="../img/close.png" />
+							</span>
+						</div>
+						<div class="stu_table">
+							<button id="btnExport2" style="margin-left: 10px;">导出</button>
+							<table id="stuMsg_table"></table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav">
+				<p>@智能考核系统</p>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/AttendanceManagement.js" ></script>
+	<link rel="stylesheet" href="../css/AttendanceManagement.css" />
+</html>

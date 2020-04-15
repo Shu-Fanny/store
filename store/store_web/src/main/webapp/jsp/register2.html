@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登陆界面</title>
+		<link rel="stylesheet" href="../css/register.css" />
+		<script type="text/javascript" src="../js/jquery-1.12.4.js" ></script>
+		<!--<script type="text/javascript" src="register.js" ></script>-->
+		<script type="text/javascript" src="../js/register2.js" ></script>
+	</head>
+	<body>
+		<div class="box">
+		<div class="header"></div>
+		<div class="login">
+			<div class="login_box">
+				<h3>智慧考核系统</h3>
+				<form name="form">
+				<div class="text">
+					<label class="login_ID">
+						<input id="ID" class="textboxStyle" type="text" name="ID" placeholder="账号"/>
+					</label>
+					<label class="login_pwd">
+						<input id="pwd" class="textboxStyle" type="password" name="pwd" placeholder="密码"/>
+					</label>
+					<br />
+				</div>
+			    <div class="register">
+			    	<br />
+			    	<input type="radio" id="role" name="role" value="1" class="radio" checked />教师 
+			        <!--<input type="radio" id="" name="role" value="学生" class="radio" />学生--> 
+			        <input type="radio" id="role" name="role" value="2" class="radio" />管理员
+			        <br /><br />
+			    	<!--<input type="button" name="" class="btn" value="登录"  onclick="judge()">-->
+			    	 <input type="button" id="login" name="" class="btn" value="确认登录" onclick="judge()" />
+			    	<br />
+			    	<!--<a href="#" class="changepwd">忘记密码?</a>-->
+			    	<br /><br />
+			    	<label class="error" id="error">
+			    		您的工号或密码有误 请重新输入!
+			        </label>
+				</form>
+			    </div>
+			    
+			</div>
+		</div>
+		<div class="foot">
+		</div>
+		</div>
+
+	</body>
+</html>
